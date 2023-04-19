@@ -1,0 +1,172 @@
+.main
+{
+    padding: 110px 0;
+}
+.select_list 
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    padding: 10px 0;
+    width: 500px;
+    height: 50px;
+    background: #DEE4FF;
+    /* Shadow */
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.select_favorites,
+.select_mines
+{
+    font-weight: 600;
+    font-size: 20px;
+    color: #5055D6;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.select_favorites._selected,
+.select_mines._selected
+{
+    padding: 0 50px;
+    background: #fff;
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+.cards_favorites._invis,
+.cards_mines._invis 
+{
+    display: none;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 530px) 
+{
+    .select_list
+    {
+        width: 280px;
+        height: 80px;
+        flex-direction: column;
+    }       
+}
+
+/* card_section */
+.card_section 
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    padding: 35px;
+    min-height: 360px;
+    background: #FFFFFF;
+    cursor: pointer;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.card_section span
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 60px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+
+}
+.card_section span::before
+{
+    content: '\f08a';
+    font-family: FontAwesome;
+    font-size: 32px;
+    color: #5055D6;
+    transition: all 0.3s ease 0s;
+}
+.card_section span:hover::before
+{
+    content: '\f004';
+    color: #f00;
+    transition: all 0.3s ease 0s;
+}
+.cards_favorites .card_section span::before
+{
+    content: '\f004';
+    font-family: FontAwesome;
+    font-size: 32px;
+    color: #f00;
+}
+.card_photo 
+{
+    flex: 0 0 30%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.card_photo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+.card_content
+{
+    margin: 0 0 0 25px;
+    height: inherit;
+    border-bottom: 2px solid #5055D6;
+}
+.card_price 
+{
+    margin: 25px 0 50px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5055D6;
+}
+.card_text 
+{
+    font-weight: 400;
+    font-size: 20px;
+    color: #050bbb;
+}
+
+@media (max-width: 768px) 
+{
+    .main
+    {
+        padding: 50px 0 110px;
+    }    
+    .card_section
+    {
+        flex-direction: column;
+    }
+    .card_section span
+    {
+        top: 50px;
+        right: 20px;
+        bottom: unset;
+    }
+    .card_section span::before
+    {
+        color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+    .card_section span:hover::before
+    {
+        color: #f00;
+        transition: all 0.3s ease 0s;
+    }
+    .card_photo
+    {
+        flex: 0 0 100%;
+        max-height: 420px;
+    }
+    .card_content
+    {
+        margin: 25px 0 0;
+    }
+}

@@ -1,0 +1,166 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #5055D6 0.42%, rgba(110, 115, 228, 0.57) 100%);
+}
+.auth_card
+{
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+.auth
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 100px;
+    padding: 80px 0 50px;
+    max-width: 600px;
+    min-height: 700px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+.auth h1
+{
+    margin: 0 0 70px;
+}
+.auth div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+}
+.auth ul
+{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.form_list
+{
+    width: 100%;
+    margin: 0 0 10px 0; 
+    padding: 0;
+}
+.form_label
+{
+    font-size: 11px;
+    color: #767676;
+}
+.form_label_repeating,
+.form_label_error
+{
+    display: none;
+    font-size: 11px;
+    color: red;
+}
+.form_list._error label.form_label
+{
+    color: red;
+}
+.form_list._repeating label.form_label_repeating
+{
+    display: block;
+}
+.form_list._error label.form_label_error
+{
+    display: block;
+}
+
+.form_input
+{
+    margin: 10px 0;
+    width: 100%;
+    min-height: 50px;
+    padding-left: 33px;
+    border: 2px solid #5055D6;
+    border-radius: 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767676;
+}
+.form_input:focus
+{
+    outline-color: #050bbb;
+}
+.form_input._error,
+.form_input._repeating
+{
+    box-shadow: 0 0 15px -5px red;
+}
+
+.button_signup,
+.button_login
+{
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid #5055D6;
+    border-radius: 37px;
+    padding: 0;
+    background-color: #5055D6;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_signup:active,
+.button_login:active
+{
+    background-color: #767ae6;
+}
+.auth_link
+{
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+.auth_link:hover
+{
+    
+    border-bottom: 2px solid #5055D6;
+}
+.auth_link span::before
+{
+    content: '\f178';
+    font-family: FontAwesome;
+    color: #5055D6;
+    margin-left: 10px;
+}
+
+@media (max-width: 424px)
+{
+    .auth form
+    {
+        max-width: 250px;
+    }
+    .auth h1
+    {
+        font-size: 36px;
+    }
+    .form_list input
+    {
+        font-size: 12px;
+    }
+    .button_signup,
+    .button_login
+    {
+        font-size: 12px;
+    }
+}

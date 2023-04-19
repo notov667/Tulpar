@@ -1,0 +1,94 @@
+.aboutus_section
+{
+    width: 100%;
+    padding: 50px 0;
+    background: #EAE3D2;
+    margin: 110px 0 0 0;
+    box-shadow: inset 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.aboutus_section h1 
+{
+    text-align: center;
+}
+.aboutus_section p
+{
+    max-width: 665px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_section
+{
+    display: inline-flex;
+    width: 100%;
+    padding: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_text
+{
+    
+    width: 40%;
+}
+.main_text p
+{
+    margin-top: 25px;
+}
+.main_image
+{
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.main_image_img
+{
+    flex-basis: 48%;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.main_image_img.first
+{
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+.main_image_img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media (max-width: 767px)
+{
+    .main_text
+    {
+        width: 100%;
+    }
+    .main_text h2
+    {
+        text-align: center;
+    }
+    .main_text p
+    {
+        text-align: justify;
+    }
+    .aboutus_section p,
+    .main_text p
+    {
+        font-size:  24px;
+    }
+    .main_image
+    {
+        display: none;
+    }
+    .aboutus_section
+    {
+        margin: 50px 0 0 0;
+    }
+}

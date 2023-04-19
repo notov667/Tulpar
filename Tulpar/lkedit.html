@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Tulpar</title>
+        <link rel="stylesheet" type="text/css" href="css/lkedit.css">
+        <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+
+        <link rel="icon" href="jpeg/favicon.png">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="edit_card">
+                <h1>Редактировать</h1>
+                <form class="edit_form" id="edit_form" action="#" method="post">
+                    <div class="edit_form_contents">
+                        <div>
+                            <div><label class="edit_form_label" for="edit_photo">Фото:</label></div>
+                            <div class="edit_form_img">
+                                <div class="edit_img" id="edit_img">
+                                    <img class="_img" src="jpeg/personimg1.png" alt="Photo">
+                                </div>
+                                <input class="edit_form_file" name="edit_photo" type="file" id="edit_photo" accept="image/*">
+                            </div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <label class="edit_form_label" for="edit_name">Имя:</label>
+                                    <input class="edit_form_input" name="edit_name" type="text" id="edit_name">
+                                </li>
+                                <li>
+                                    <label class="edit_form_label" for="edit_tel">Телефон:</label>
+                                    <input class="edit_form_input" name="edit_tel" type="tel" id="edit_tel">
+                                </li>
+                                <li>
+                                    <label class="edit_form_label" for="edit_about">О себе:</label>
+                                    <textarea class="edit_form_input" name="edit_about" type="text" id="edit_about"></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edit_form_password">
+                        <div class="edit_form_oldpass">
+                            <label class="edit_form_label" for="old_password">Старый пароль:</label>
+                            <input class="edit_form_input _password _old" type="password" name="old_password" id="old_password">
+                            <label class="edit_form_label_error">Пароль не верный!</label>
+                        </div>
+                        <div class="edit_form_newpass">
+                            <label class="edit_form_label" for="new_password">Новый пароль:</label>
+                            <input class="edit_form_input _password _new" type="password" name="new_password" id="new_password">
+                            <label class="edit_form_label_error">Пароль должен состоять из больших и маленьких букв, символов, цифр и не менее 8 символов</label>
+                        </div>
+                    </div>
+                    <div class="edit_form_btns">
+                        <a class="edit_form_btns_link" href="lk.html"></a>
+                        <button class="edit_form_btns_btn" type="submit">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!--  Scripts  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/lkedit.js"></script>
+    </body>
+</html>

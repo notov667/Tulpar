@@ -1,0 +1,144 @@
+/* Profile section */
+.profile_section
+{
+    width: 100%;
+    margin: 110px 0 0 0;
+    padding: 50px 0;
+    background: #EAE3D2;
+    box-shadow: inset 0px 0px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.profile
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profile_photo
+{
+    display: flex;
+    flex: 0 0 200px;
+    height: 260px;
+
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.profile_photo img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.profile_text
+{
+    display: inline-block;
+    position: relative;
+    width: 56%;
+}
+.profile_text h2
+{
+
+    color: #070934;
+}
+.profile_text table
+{
+    margin-top: 25px;
+    
+}
+.profile_text table th
+{
+    padding-top: 20px;
+    text-align: left;
+    font-weight: 400;
+    vertical-align: text-top;
+}
+.profile_text table td
+{    
+    padding-top: 20px;
+    padding-left: 36px;
+    color: rgba(7, 9, 52, 0.63);
+}
+@media (max-width: 767px)
+{
+    .profile
+    {
+        flex-direction: column;
+    }
+    .profile_text
+    {
+        margin: 30px 0 0;
+        width: 100%;
+    }
+    .profile_text h2
+    {
+        text-align: center;
+    }
+    .profile_photo
+    {
+        margin: 0 auto;
+    }
+    .profile_photo::before
+    {
+        margin: 67px auto;
+        font-size: 64px;
+    }
+    .profile_section
+    {
+        margin: 50px 0 0 0;
+    }
+}
+
+/* btns section */
+.lk_update,
+.lk_btns_section
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.lk_btns
+{
+    padding: 10px 80px;
+    background: #FFFFFF;
+    border: 1px solid #5055D6;
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+
+    color: #5055D6;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.lk_btns._noneAdmin
+{
+    display: none;
+}
+.lk_btns:hover
+{
+    border-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 996px)
+{
+    .lk_update,
+    .lk_btns_section
+    {
+        flex-wrap: wrap;
+    }
+    .lk_btns
+    {
+        padding: 10px 40px;
+        margin: 0 0 30px 0;
+    }
+
+}
+
+
+
+
+
+
+

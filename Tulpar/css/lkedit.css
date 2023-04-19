@@ -1,0 +1,285 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #5055D6 0.42%, rgba(110, 115, 228, 0.57) 100%);
+}
+body
+{
+    padding: 100px 0;
+}
+.edit_card 
+{
+    width: 100%;
+    min-height: 600px;
+    margin: 80px auto;
+    padding: 80px 0 0;
+    background: #fff;
+    border-radius: 34px;
+
+}
+.edit_card h1
+{
+    text-align: center;
+}
+.edit_form 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 0;
+
+}
+.edit_form_contents
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.edit_form ul
+{
+    padding: 0;
+}
+.edit_form li
+{
+    display: flex;
+    width: 450px;
+    align-items: flex-start;
+    margin: 0 0 25px;
+    justify-content: space-between;
+    list-style: none;
+}
+.edit_form_label 
+{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.12em;
+    
+    color: #5055D6;
+
+}
+.edit_form_img
+{
+    margin: 25px 0 0 0;
+    position: relative;
+    width: 200px;
+    height: 260px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.edit_img
+{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    flex: 0 0 200px;
+    height: 260px;
+    border-radius: 15px;
+}
+.edit_img img._img
+{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+.edit_form_file
+{
+    width: 200px;
+    height: 260px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 15px;
+    
+    color: transparent;
+    cursor: pointer;
+}
+
+.edit_form_file:hover::before
+{
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+.edit_form_file::before
+{
+    content: '\f067';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 97px 75px;
+    font-family: FontAwesome;
+    font-size: 64px;
+    color: #5055D6;
+    transition: all 0.3s ease 0s;
+}
+.edit_form_file::file-selector-button
+{
+    display: none;
+    
+}
+.edit_form_input 
+{
+    min-width: 200px;
+    min-height: 50px;
+    padding: 15px;
+    border: 2px solid #5055D6;
+    border-radius: 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767676;
+
+}
+.edit_form_input:focus
+{
+    outline-color: #050bbb;
+} 
+textarea.edit_form_input 
+{
+    min-height: 147px;
+    resize: vertical;
+    border-radius: 15px;
+
+}
+.edit_form_password 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+    width: 100%;
+}
+.edit_form_oldpass,
+.edit_form_newpass
+{
+    max-width: 480px;
+}
+.edit_form_label_error
+{
+    display: none;
+    font-size: 11px;
+    color: red;
+}
+
+.edit_form_oldpass._error label.edit_form_label_error
+{
+    display: block;
+}
+.edit_form_newpass._error label.edit_form_label_error
+{
+    display: block;
+}
+
+.edit_form_input._password
+{
+    width: 300px;
+    margin: 25px 0 0 0;
+}
+.edit_form_btns 
+{
+    display: flex;
+    margin: 90px 0 70px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.edit_form_btns_link::before 
+{
+    content: '\f177';
+    font-family: FontAwesome;
+    color: #5055D6;
+    font-size: 32px;
+}
+.edit_form_btns_btn 
+{
+    padding: 10px 80px;
+    background: #FFFFFF;
+    border: 1px solid #5055D6;
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+    color: #5055D6;
+    transition: all 0.3s ease 0s;
+
+}
+.edit_form_btns_btn:hover
+{
+    border-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0s;
+}
+
+
+@media (max-width: 918px)
+{
+    
+    .edit_card h1
+    {
+        font-size: 36px;
+    }
+    .edit_form
+    {
+        margin: 50px 10px 0;
+    }
+    .edit_form li
+    {
+        max-width: 250px;
+        justify-content: normal;
+        align-items: normal;
+        flex-direction: column;
+    }
+    .edit_form_label
+    {
+        margin: 0 0 25px 0;
+    }
+    
+    .edit_form_input
+    {
+        width: 100%;
+    }
+    .edit_form_contents
+    {
+        flex-wrap: wrap;
+    }
+    
+    .edit_form_btns
+    {
+        flex-direction: column-reverse;
+
+    }
+    .edit_form_btns_btn
+    {
+        margin: 0 0 25px 0;
+        padding: 10px 50px;
+    }
+    .edit_form_password
+    {
+        display: block;
+    }
+    .edit_form_oldpass,
+    .edit_form_newpass
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .edit_form_input._password
+    {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 420px)
+{
+    .edit_card h1 
+    {
+        font-size: 28px;
+    }
+}

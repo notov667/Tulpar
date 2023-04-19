@@ -1,0 +1,214 @@
+.main 
+{
+    padding: 110px 0;
+}
+.section 
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 35px 0;
+}
+.photo_section
+{
+    position: relative;
+    width: 57.5%;
+}
+.photo
+{
+    display: flex;
+    flex: 0 0 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+
+}
+.photo img
+{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+._share 
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #5055D6;
+}
+._share::before
+{
+    content: '\f1d8';
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+}
+._like 
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #5055D6;
+}
+._like::before
+{
+    content: '\f08a';
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+}
+._like:hover::before
+{
+    content: '\f004';
+    color: #f00;
+}
+.info_section 
+{
+    width: 40%;
+    min-height: 420px;
+    padding: 35px;
+    border-radius: 15px;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+
+}
+.info_section p
+{
+    margin: 15px 0 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #5055D6;   
+}
+.info_section table
+{
+    width: 100%;
+    margin: 25px 0 0 0;
+    border-top: 2px solid #5055D6;
+    padding: 25px 0 0 0;
+}
+.info_section th
+{
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+    color: #5055D6;
+    
+    opacity: 0.7;
+}
+.info_section td
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: end;
+    color: #5055D6;
+}
+.aboutcar_section 
+{
+    width: 57.5%;
+    padding: 15px 35px;
+    min-height: 140px;
+    background: #FFFFFF;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.aboutcar_info 
+{
+    margin: 15px 0 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #070934;
+}
+.aboutperson_section 
+{
+    width: 40%;
+    min-height: 140px;
+    padding: 35px;
+    background: #FFFFFF;
+    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.aboutperson_name,
+.aboutperson_tel 
+{
+    margin: 0 0 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+    color: #5055D6;
+}
+.aboutperson_name span,
+.aboutperson_tel span
+{
+    margin: 0 25px 0 0;
+}
+.aboutperson_name span::before
+{
+    content: '\f007';
+    font-family: FontAwesome;
+    color: #5055D6;
+    font-size: 28px;
+    
+}
+.aboutperson_tel span::before
+{
+    content: '\f095';
+    font-family: FontAwesome;
+    color: #5055D6;
+    font-size: 28px;
+}
+
+@media (max-width: 1200px)
+{
+    .section
+    {
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .photo_section,
+    .info_section,
+    .aboutcar_section,
+    .aboutperson_section
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+}
+@media (max-width: 768px)
+{
+    .main
+    {
+        padding: 50px 0 110px;
+    }
+}
+@media (max-width: 380px)
+{
+    .info_section th
+    {
+        display: none;
+    }
+    .info_section td
+    {
+        text-align: start;
+    }
+}

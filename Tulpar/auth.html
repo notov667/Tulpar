@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Tulpar</title>
+        <link rel="stylesheet" type="text/css" href="css/auth.css">
+        <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+
+        <link rel="icon" href="jpeg/favicon.png">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="auth_card">
+            <div class="auth" id="login">
+                <div>
+                    <h1>Вход</h1>
+                    <form id="login" action="#" method="post" novalidate="">
+                            <ul>
+                                <li class="form_list">
+                                    <label class="form_label">Ведите логин!</label>
+                                    <input class="form_input _login _req" name="name" id="name" placeholder="Логин" type="text">
+                                    <label class="form_label_error">Такого пользователя не существует!</label>
+                                </li>
+                                <li class="form_list">
+                                    <label class="form_label">Ведите пароль!</label>
+                                    <input class="form_input _password _req" name="password" id="password" placeholder="Пароль" type="password">
+                                    <label class="form_label_error">Пароль не верный!</label>
+                                </li>
+                                <li class="form_list">
+                                    <button class="button_login" type="submit">Войти</button>
+                                </li>
+                            </ul>
+                    </form>
+                    <a class="auth_link" href="joke.html">Забыли логин/пароль?</a>
+                </div>
+                <a class="auth_link" href="reg.html">Создать аккаунт<span></span></a>
+            </div>
+        </div>
+        
+        <!--  Scripts  -->
+        <script src="js/auth.js"></script>
+    </body>
+</html>

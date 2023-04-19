@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Tulpar</title>
+        <link rel="stylesheet" type="text/css" href="css/auth.css">
+        <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+
+        <link rel="icon" href="jpeg/favicon.png">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="auth_card">
+        <div class="auth" id="reg">
+            <div>
+                <h1>Регистрация</h1>
+                <form id="reg" action="#" method="post" novalidate="">
+                        <ul>
+                            <li class="form_list">
+                                <label class="form_label">Ведите логин!</label>
+                                <input class="form_input _login _req" name="name" id="name" placeholder="Логин" type="text"  autofocus>
+                                <label class="form_label_repeating">Такой логин уже существует!</label>
+                            </li>
+                            <li class="form_list">
+                                <label class="form_label">Ведите еМайл корректно!</label>
+                                <input class="form_input _email _req" name="email" id="email" placeholder="еМайл" type="email">
+                                <label class="form_label_repeating">Такой еМайл адрес уже существует!</label>
+                            </li>
+                            <li class="form_list">
+                                <label class="form_label">Ведите пароль!</label>
+                                <input class="form_input _password _req" name="password" id="password" placeholder="Пароль" type="password">
+                                <label class="form_label_error">Пароль должен состоять из больших и маленьких букв, символов, цифр и не менее 8 символов</label>
+                            </li>
+                            <li class="form_list">
+                                <button class="button_signup" type="submit">зарегистрироваться</button>
+                            </li>
+                        </ul>
+                </form>
+            </div>
+            <a class="auth_link" href="auth.html">Войти в аккаунт<span></span></a>
+        </div>
+        </div>
+
+        
+        <!--  Scripts  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/reg.js"></script>
+    </body>
+</html>

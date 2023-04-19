@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Tulpar</title>
+        <link rel="stylesheet" type="text/css" href="css/adminpanel.css">
+        <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+
+        <link rel="icon" href="jpeg/favicon.png">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="admin_card">
+                <h1>Админ панель</h1>
+                <form class="admin_form" id="admin_form" action="#" method="post">
+                    <div class="admin_form_contents">
+                        <ul>
+                            <li>
+                                <label class="admin_form_label" for="admin_id">id:</label>
+                                <div>
+                                    <label class="admin_form_label_error" for="admin_id">Пользователя с таким ID нет!</label>
+                                    <input class="admin_form_input" id="admin_id" type="number">
+                                </div>
+                            </li>
+                            <li>
+                                <label class="admin_form_label" for="admin_login">login:</label>
+                                <div>
+                                    <input class="admin_form_input" id="person_login" type="text" placeholder="login" readonly>
+                                    <div class="input_error">
+                                        <input class="admin_form_input" id="new_login" type="text">
+                                        <label class="admin_form_label_error" for="admin_id">Ведите логин без пробелов!</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="admin_form_label" for="admin_email">email:</label>
+                                <div>
+                                    <input class="admin_form_input" id="person_email" type="email" placeholder="email@example.com" readonly>
+                                    <div class="input_error">
+                                        <input class="admin_form_input" id="new_email" type="email">
+                                        <label class="admin_form_label_error" for="admin_id">Ведите еМайл корректно!</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="admin_form_label" for="admin_password">password:</label>
+                                <div>
+                                    <input class="admin_form_input" id="person_password" type="password" placeholder="password" readonly>
+                                    <div class="input_error">
+                                        <input class="admin_form_input" id="new_password" type="password">
+                                        <label class="admin_form_label_error" for="admin_id">Пароль должен состоять из больших и маленьких букв, символов, цифр и не менее 8 символов</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="admin_form_btns">
+                        <a class="admin_form_btns_link" href="lk.html"></a>
+                        <button class="admin_form_btns_btn" id="delete_account" type="button">Удалить</button>
+                        <button class="admin_form_btns_btn" type="submit">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!--  Scripts  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/adminpanel.js"></script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+main
+{
+    padding: 110px 0 0 0;
+}
+main h1
+{
+    padding: 50px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.selection
+{
+    display: flex;
+    margin-bottom: 34px;
+    width: 100%;
+    justify-content: space-between;
+}
+.add_form_label
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.12em;
+}
+.add_form_select
+{
+    width: 20%;
+    min-height: 35px;
+    padding-left: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #5055D6;
+    border: 2px solid #5055D6;
+    border-radius: 34px;
+}
+.add_form_input
+{
+    width: 20%;
+    min-height: 35px;
+    padding-left: 15px;
+    background-color: transparent;
+    color: #5055D6;
+    border: 2px solid #5055D6;
+    border-radius: 34px;
+}
+.add_form_select:focus,
+.add_form_input:focus
+{
+    outline-color: #050bbb;
+}
+
+/* Image input */
+.image_input
+{
+    margin-top: 77px;
+    width: 100%;
+    left: 0px;
+    top: 723px;
+    padding: 50px 0;
+}
+.image_input_section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.add_form_input_image
+{
+    width: 225px;
+    height: 225px;
+    position: relative;
+    background: #FFFFFF;
+    margin: 30px 15px 0 0;
+    color: #5055D6;
+    border: none;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    
+}
+.add_form_input_image::file-selector-button
+{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #5055D6;
+    background: #FFFFFF;
+}
+
+/* Input about a car */
+.about_car
+{
+    background: #ffffff;
+}
+.about_car h2
+{
+    padding: 50px 0;
+}
+.add_form_textarea
+{
+    width: 100%;
+    min-height: 218px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: start;
+    border: 2px solid #5055D6;
+    border-radius: 15px;
+    resize: vertical;
+}
+.add_form_btn
+{
+    margin: 50px auto 100px;
+    width: 235px;
+    height: 39px;
+    background-color: transparent;
+    color: #5055D6;
+    border: 2px solid #5055D6;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.add_form_btn:hover
+{
+    background-color: #5055D6;
+    color: #ffffff;
+    
+}
+
+
+@media (max-width: 767px)
+{
+    .image_input h2
+    {
+        text-align: center;
+    }
+    .image_input_section
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image_input_section input
+    {
+        width: 100%;
+    }
+    .about_car textarea
+    {
+        font-size: 24px;
+    }
+    main
+    {
+        padding: 50px 0 0 0;
+    }
+}
